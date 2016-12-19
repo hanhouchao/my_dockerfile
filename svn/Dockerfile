@@ -7,7 +7,7 @@ RUN apt-get update && \
 
 COPY state  /svn
 COPY svn.sh  /svn
-
-EXPOSE 8080
+EXPOSE 210 
+EXPOSE 80
 
 CMD  /svn/svn.sh  && tailf /svn/state
