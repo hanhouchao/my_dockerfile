@@ -1,0 +1,6 @@
+version: "0.1.0"
+pre_ci_boot:
+    image: index-staging.alauda.cn/testorg001/qausefulimages
+    tag: latest
+ci:
+    - cp -r . $ALAUDACI_DEST_DIR
