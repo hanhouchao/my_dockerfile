@@ -9,5 +9,6 @@ COPY state  /svn
 COPY svn.sh  /svn
 
 EXPOSE 80
+EXPOSE 90
 
 CMD  /svn/svn.sh  && tailf /svn/state
